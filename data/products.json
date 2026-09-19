@@ -1,0 +1,716 @@
+[
+  {
+    "id": 1,
+    "name": "Apple MacBook Air M2",
+    "category": "Laptop",
+    "price": 132000,
+    "rating": 4.8,
+    "stock": 5,
+    "icon": "laptop",
+    "image": "macbook-air-m2.png",
+    "specs": [
+      "Apple M2 chip",
+      "8GB RAM / 256GB SSD",
+      "13.6\" Liquid Retina display",
+      "Up to 18 hours battery life"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "HP Pavilion Plus 14",
+    "category": "Laptop",
+    "price": 98000,
+    "rating": 4.5,
+    "stock": 10,
+    "icon": "laptop",
+    "specs": [
+      "Intel Core i5 13th Gen",
+      "16GB RAM / 512GB SSD",
+      "14\" 2.8K OLED 90Hz display",
+      "Fingerprint reader, backlit keyboard"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Apple iPhone 15",
+    "category": "Smartphone",
+    "price": 118000,
+    "rating": 4.7,
+    "stock": 8,
+    "icon": "phone",
+    "specs": [
+      "6.1\" Super Retina XDR OLED display",
+      "A16 Bionic chip, 128GB",
+      "48MP main camera",
+      "USB-C, Dynamic Island"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Samsung Galaxy S24",
+    "category": "Smartphone",
+    "price": 105000,
+    "rating": 4.6,
+    "stock": 10,
+    "icon": "phone",
+    "specs": [
+      "6.2\" Dynamic AMOLED 2X, 120Hz",
+      "8GB RAM / 256GB",
+      "50MP triple camera",
+      "4000mAh, 25W fast charge"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "PulseBuds Pro",
+    "category": "Audio",
+    "price": 4200,
+    "rating": 4.7,
+    "stock": 60,
+    "icon": "buds",
+    "specs": [
+      "Active Noise Cancellation",
+      "30hr total battery",
+      "Bluetooth 5.3",
+      "IPX5 water resistant"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "PulseBuds Lite",
+    "category": "Audio",
+    "price": 1650,
+    "rating": 4.0,
+    "stock": 80,
+    "icon": "buds",
+    "specs": [
+      "20hr total battery",
+      "Bluetooth 5.1",
+      "Touch controls"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Rolex Submariner Date",
+    "category": "Watch",
+    "price": 1450000,
+    "rating": 4.9,
+    "stock": 2,
+    "icon": "watch",
+    "specs": [
+      "41mm Oystersteel case",
+      "Automatic movement",
+      "300m water resistance",
+      "Ceramic rotating bezel"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "ClickForge Mechanical Keyboard",
+    "category": "Accessories",
+    "price": 3200,
+    "rating": 4.6,
+    "stock": 40,
+    "icon": "keyboard",
+    "specs": [
+      "Hot-swappable switches",
+      "Per-key RGB",
+      "Wired + Bluetooth"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "VisionDisplay 27Q",
+    "category": "Monitor",
+    "price": 24500,
+    "rating": 4.5,
+    "stock": 15,
+    "icon": "monitor",
+    "specs": [
+      "27\" QHD (2560x1440)",
+      "165Hz refresh rate",
+      "IPS panel, HDR10"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "VoltPack 20000",
+    "category": "Power",
+    "price": 2100,
+    "rating": 4.3,
+    "stock": 100,
+    "icon": "power",
+    "specs": [
+      "20,000mAh capacity",
+      "65W PD fast charge",
+      "Dual USB-C + USB-A"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Dell XPS 13",
+    "category": "Laptop",
+    "price": 145000,
+    "rating": 4.6,
+    "stock": 5,
+    "icon": "laptop",
+    "specs": [
+      "Intel Core i7 12th Gen",
+      "16GB RAM / 512GB SSD",
+      "13.4\" FHD+ InfinityEdge display",
+      "Aluminium body, about 1.2kg"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Asus ROG Strix G16",
+    "category": "Laptop",
+    "price": 215000,
+    "rating": 4.6,
+    "stock": 4,
+    "icon": "laptop",
+    "specs": [
+      "Intel Core i7 13th Gen HX",
+      "16GB RAM / 1TB SSD",
+      "16\" FHD+ 165Hz display",
+      "NVIDIA GeForce RTX 4060 8GB"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Google Pixel 8",
+    "category": "Smartphone",
+    "price": 85000,
+    "rating": 4.5,
+    "stock": 6,
+    "icon": "phone",
+    "specs": [
+      "6.2\" OLED display, 120Hz",
+      "Google Tensor G3 chip",
+      "8GB RAM / 128GB",
+      "50MP camera, 7 years of updates"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Xiaomi Redmi Note 13 Pro",
+    "category": "Smartphone",
+    "price": 38500,
+    "rating": 4.4,
+    "stock": 30,
+    "icon": "phone",
+    "specs": [
+      "6.67\" AMOLED display, 120Hz",
+      "8GB RAM / 256GB",
+      "200MP main camera",
+      "5100mAh, 67W fast charge"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "OnePlus 12",
+    "category": "Smartphone",
+    "price": 88000,
+    "rating": 4.6,
+    "stock": 7,
+    "icon": "phone",
+    "specs": [
+      "6.82\" LTPO AMOLED, 120Hz",
+      "Snapdragon 8 Gen 3",
+      "12GB RAM / 256GB",
+      "5400mAh, 100W fast charge"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "SlateTab 11",
+    "category": "Tablet",
+    "price": 32500,
+    "rating": 4.4,
+    "stock": 18,
+    "icon": "tablet",
+    "specs": [
+      "11\" 2K display",
+      "8GB / 128GB",
+      "8000mAh, quad speakers",
+      "Stylus support"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "SlateTab Mini 8",
+    "category": "Tablet",
+    "price": 14900,
+    "rating": 4.0,
+    "stock": 25,
+    "icon": "tablet",
+    "specs": [
+      "8.7\" HD display",
+      "4GB / 64GB",
+      "5100mAh battery",
+      "Wi-Fi + 4G"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "SonicWave ANC Headphones",
+    "category": "Audio",
+    "price": 7900,
+    "rating": 4.6,
+    "stock": 22,
+    "icon": "headphones",
+    "specs": [
+      "Hybrid noise cancellation",
+      "45hr battery",
+      "Bluetooth 5.3 + 3.5mm",
+      "Foldable design"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "BoomBox Mini Speaker",
+    "category": "Audio",
+    "price": 3500,
+    "rating": 4.4,
+    "stock": 35,
+    "icon": "speaker",
+    "specs": [
+      "20W stereo output",
+      "IPX7 waterproof",
+      "12hr playtime",
+      "Bluetooth 5.3"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "StudioMic USB Condenser",
+    "category": "Audio",
+    "price": 4500,
+    "rating": 4.5,
+    "stock": 20,
+    "icon": "mic",
+    "specs": [
+      "Cardioid pickup pattern",
+      "24-bit / 96kHz",
+      "Plug-and-play USB-C",
+      "Tripod stand included"
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Omega Seamaster Diver 300M",
+    "category": "Watch",
+    "price": 780000,
+    "rating": 4.8,
+    "stock": 4,
+    "icon": "watch",
+    "specs": [
+      "42mm stainless steel case",
+      "Co-Axial Master Chronometer movement",
+      "300m water resistance",
+      "Ceramic bezel, helium escape valve"
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Cartier Tank Must",
+    "category": "Watch",
+    "price": 480000,
+    "rating": 4.7,
+    "stock": 3,
+    "icon": "watch",
+    "specs": [
+      "Rectangular steel case",
+      "Sapphire crystal",
+      "Quartz movement",
+      "Leather strap"
+    ]
+  },
+  {
+    "id": 23,
+    "name": "GlidePro Wireless Mouse",
+    "category": "Accessories",
+    "price": 1800,
+    "rating": 4.4,
+    "stock": 65,
+    "icon": "mouse",
+    "specs": [
+      "Ergonomic design",
+      "4000 DPI sensor",
+      "Bluetooth + 2.4GHz",
+      "70-day battery life"
+    ]
+  },
+  {
+    "id": 24,
+    "name": "HubMax 9-in-1 USB-C Hub",
+    "category": "Accessories",
+    "price": 3400,
+    "rating": 4.4,
+    "stock": 40,
+    "icon": "hub",
+    "specs": [
+      "4K HDMI output",
+      "100W power passthrough",
+      "SD + microSD readers",
+      "3x USB-A 3.0"
+    ]
+  },
+  {
+    "id": 25,
+    "name": "AirLift Laptop Stand",
+    "category": "Accessories",
+    "price": 1450,
+    "rating": 4.5,
+    "stock": 55,
+    "icon": "laptop",
+    "specs": [
+      "Aluminium alloy",
+      "6 height levels",
+      "Fits laptops up to 17\"",
+      "Foldable"
+    ]
+  },
+  {
+    "id": 26,
+    "name": "DeskMat XL",
+    "category": "Accessories",
+    "price": 950,
+    "rating": 4.3,
+    "stock": 90,
+    "icon": "keyboard",
+    "specs": [
+      "900 x 400mm surface",
+      "Stitched edges",
+      "Anti-slip rubber base"
+    ]
+  },
+  {
+    "id": 27,
+    "name": "VisionDisplay 24F",
+    "category": "Monitor",
+    "price": 13900,
+    "rating": 4.2,
+    "stock": 30,
+    "icon": "monitor",
+    "specs": [
+      "24\" Full HD",
+      "75Hz refresh rate",
+      "IPS panel",
+      "HDMI + VGA"
+    ]
+  },
+  {
+    "id": 28,
+    "name": "VisionDisplay 34U Ultrawide",
+    "category": "Monitor",
+    "price": 42900,
+    "rating": 4.6,
+    "stock": 9,
+    "icon": "monitor",
+    "specs": [
+      "34\" UWQHD (3440x1440)",
+      "144Hz curved VA panel",
+      "USB-C with 65W charging"
+    ]
+  },
+  {
+    "id": 29,
+    "name": "VoltCharge 65W GaN Charger",
+    "category": "Power",
+    "price": 2400,
+    "rating": 4.5,
+    "stock": 70,
+    "icon": "charger",
+    "specs": [
+      "65W GaN technology",
+      "2x USB-C + 1x USB-A",
+      "Foldable plug",
+      "Charges laptops too"
+    ]
+  },
+  {
+    "id": 30,
+    "name": "VoltPack Mini 10000",
+    "category": "Power",
+    "price": 1400,
+    "rating": 4.2,
+    "stock": 85,
+    "icon": "power",
+    "specs": [
+      "10,000mAh capacity",
+      "22.5W fast charge",
+      "Pocket-sized",
+      "USB-C in and out"
+    ]
+  },
+  {
+    "id": 31,
+    "name": "SnapLens Action Cam 4K",
+    "category": "Camera",
+    "price": 8900,
+    "rating": 4.4,
+    "stock": 20,
+    "icon": "camera",
+    "specs": [
+      "4K 60fps video",
+      "Waterproof to 10m",
+      "Electronic stabilization",
+      "Dual screens"
+    ]
+  },
+  {
+    "id": 32,
+    "name": "SnapCam M50 Mirrorless",
+    "category": "Camera",
+    "price": 78000,
+    "rating": 4.7,
+    "stock": 7,
+    "icon": "camera",
+    "specs": [
+      "24MP APS-C sensor",
+      "4K video recording",
+      "In-body stabilization",
+      "Kit lens included"
+    ]
+  },
+  {
+    "id": 33,
+    "name": "PadPro Wireless Controller",
+    "category": "Gaming",
+    "price": 4800,
+    "rating": 4.5,
+    "stock": 32,
+    "icon": "gamepad",
+    "specs": [
+      "Hall-effect joysticks",
+      "Bluetooth + 2.4GHz",
+      "Programmable back buttons",
+      "20hr battery life"
+    ]
+  },
+  {
+    "id": 34,
+    "name": "ArenaX Gaming Headset",
+    "category": "Gaming",
+    "price": 3900,
+    "rating": 4.2,
+    "stock": 40,
+    "icon": "headphones",
+    "specs": [
+      "7.1 virtual surround",
+      "50mm drivers",
+      "Detachable microphone",
+      "RGB lighting"
+    ]
+  },
+  {
+    "id": 35,
+    "name": "HomeEye 2K Security Cam",
+    "category": "Smart Home",
+    "price": 3200,
+    "rating": 4.3,
+    "stock": 45,
+    "icon": "home",
+    "specs": [
+      "2K resolution",
+      "Night vision",
+      "Two-way audio",
+      "Motion alerts to your phone"
+    ]
+  },
+  {
+    "id": 36,
+    "name": "GlowBulb Smart RGB (2-Pack)",
+    "category": "Smart Home",
+    "price": 1100,
+    "rating": 4.1,
+    "stock": 100,
+    "icon": "home",
+    "specs": [
+      "16 million colors",
+      "Wi-Fi, no hub needed",
+      "Voice assistant support",
+      "9W, E27 base"
+    ]
+  },
+  {
+    "id": 37,
+    "name": "MeshLink AX3000 Router",
+    "category": "Networking",
+    "price": 7600,
+    "rating": 4.5,
+    "stock": 22,
+    "icon": "router",
+    "specs": [
+      "Wi-Fi 6 (AX3000)",
+      "4x Gigabit LAN ports",
+      "Covers about 2000 sq ft",
+      "Mesh-ready"
+    ]
+  },
+  {
+    "id": 38,
+    "name": "TurboSSD 1TB Portable",
+    "category": "Storage",
+    "price": 9800,
+    "rating": 4.6,
+    "stock": 26,
+    "icon": "storage",
+    "specs": [
+      "1TB NVMe storage",
+      "1050MB/s read speed",
+      "USB 3.2 Gen 2",
+      "Shock resistant"
+    ]
+  },
+  {
+    "id": 39,
+    "name": "SwiftDrive 128GB Flash Drive",
+    "category": "Storage",
+    "price": 950,
+    "rating": 4.2,
+    "stock": 120,
+    "icon": "storage",
+    "specs": [
+      "128GB capacity",
+      "USB 3.2",
+      "Metal casing"
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Lenovo ThinkPad E14",
+    "category": "Laptop",
+    "price": 88000,
+    "rating": 4.4,
+    "stock": 12,
+    "icon": "laptop",
+    "specs": [
+      "Intel Core i5 13th Gen",
+      "16GB RAM / 512GB SSD",
+      "14\" Full HD IPS display",
+      "Fingerprint reader, spill-resistant keyboard"
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Acer Aspire 5",
+    "category": "Laptop",
+    "price": 72000,
+    "rating": 4.2,
+    "stock": 18,
+    "icon": "laptop",
+    "specs": [
+      "Intel Core i5 13th Gen",
+      "16GB RAM / 512GB SSD",
+      "15.6\" Full HD IPS display",
+      "Wi-Fi 6, backlit keyboard"
+    ]
+  },
+  {
+    "id": 42,
+    "name": "Oppo Reno 11",
+    "category": "Smartphone",
+    "price": 55000,
+    "rating": 4.3,
+    "stock": 15,
+    "icon": "phone",
+    "specs": [
+      "6.7\" AMOLED display, 120Hz",
+      "12GB RAM / 256GB",
+      "50MP main + 32MP portrait camera",
+      "5000mAh, 67W fast charge"
+    ]
+  },
+  {
+    "id": 43,
+    "name": "Vivo V30",
+    "category": "Smartphone",
+    "price": 58000,
+    "rating": 4.4,
+    "stock": 12,
+    "icon": "phone",
+    "specs": [
+      "6.78\" curved AMOLED, 120Hz",
+      "12GB RAM / 256GB",
+      "50MP camera with OIS",
+      "5000mAh, 80W fast charge"
+    ]
+  },
+  {
+    "id": 44,
+    "name": "Huawei P60 Pro",
+    "category": "Smartphone",
+    "price": 112000,
+    "rating": 4.6,
+    "stock": 5,
+    "icon": "phone",
+    "specs": [
+      "6.67\" LTPO OLED, 120Hz",
+      "8GB RAM / 256GB",
+      "48MP variable-aperture main camera",
+      "4815mAh, 88W wired charging"
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Motorola Moto G84",
+    "category": "Smartphone",
+    "price": 29000,
+    "rating": 4.2,
+    "stock": 25,
+    "icon": "phone",
+    "specs": [
+      "6.55\" pOLED display, 120Hz",
+      "12GB RAM / 256GB",
+      "50MP camera with OIS",
+      "5000mAh, 33W fast charge"
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Nothing Phone (2a)",
+    "category": "Smartphone",
+    "price": 41000,
+    "rating": 4.4,
+    "stock": 14,
+    "icon": "phone",
+    "specs": [
+      "6.7\" AMOLED display, 120Hz",
+      "8GB RAM / 128GB",
+      "Glyph lights on the back",
+      "50MP dual camera, 5000mAh"
+    ]
+  },
+  {
+    "id": 47,
+    "name": "Audemars Piguet Royal Oak",
+    "category": "Watch",
+    "price": 5200000,
+    "rating": 4.9,
+    "stock": 0,
+    "icon": "watch",
+    "specs": [
+      "41mm stainless steel case",
+      "Automatic movement",
+      "Octagonal bezel with eight screws",
+      "Grande Tapisserie dial"
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Patek Philippe Calatrava",
+    "category": "Watch",
+    "price": 4600000,
+    "rating": 4.9,
+    "stock": 1,
+    "icon": "watch",
+    "specs": [
+      "Slim round case, sapphire crystal",
+      "Self-winding mechanical movement",
+      "Sapphire case back",
+      "Hand-stitched alligator strap"
+    ]
+  }
+]

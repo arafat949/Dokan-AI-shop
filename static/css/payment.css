@@ -1,0 +1,131 @@
+/* =========================================================
+   Dokan - payment popup (bKash / Nagad / Card)
+   ========================================================= */
+
+.pay-modal {
+  position: fixed; inset: 0; z-index: 60;
+  display: grid; place-items: center; padding: 16px;
+}
+.pay-modal[hidden] { display: none; }
+
+.pay-backdrop { position: absolute; inset: 0; background: rgba(8, 6, 12, .72); backdrop-filter: blur(3px); }
+
+.pay-card {
+  --pay: #e2136e;
+  --pay-soft: rgba(226, 19, 110, .14);
+
+  position: relative; width: min(440px, 100%); max-height: calc(100vh - 32px); overflow-y: auto;
+  background: var(--panel); border: 1px solid var(--border);
+  border-radius: 22px; box-shadow: 0 30px 80px rgba(0, 0, 0, .55);
+  animation: pop .28s ease;
+}
+.pay-card[data-method="nagad"] { --pay: #d9491b; --pay-soft: rgba(217, 73, 27, .16); }
+.pay-card[data-method="card"]  { --pay: #4f5bd5; --pay-soft: rgba(79, 91, 213, .2); }
+
+@keyframes pop { from { opacity: 0; transform: translateY(14px) scale(.97); } }
+
+.pay-close {
+  position: absolute; top: 12px; right: 12px; z-index: 2;
+  width: 32px; height: 32px; display: grid; place-items: center;
+  border-radius: 50%; border: 0; background: rgba(0, 0, 0, .25); color: #fff;
+}
+.pay-close:hover { background: rgba(0, 0, 0, .4); }
+
+/* ---------- Colored top band ---------- */
+.pay-top {
+  display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 6px 16px;
+  padding: 34px 26px 22px; color: #fff;
+  background: var(--pay); transition: background .25s;
+}
+.pay-brand { grid-column: 1; font-family: var(--font-display); font-size: 34px; font-weight: 700; line-height: 1; letter-spacing: -0.02em; }
+.pay-merchant { grid-column: 1; font-size: 13px; opacity: .85; }
+.pay-total { grid-column: 2; grid-row: 1 / span 2; text-align: right; }
+.pay-total span { display: block; font-size: 12px; opacity: .85; }
+.pay-total strong { font-family: var(--font-display); font-size: 28px; font-weight: 600; line-height: 1.1; }
+
+/* ---------- Body ---------- */
+.pay-body { padding: 22px 26px 22px; }
+
+.pay-methods {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px;
+  padding: 4px; margin-bottom: 22px; border-radius: 12px;
+  background: var(--bg); border: 1px solid var(--border);
+}
+.pay-method {
+  padding: 9px 6px; border-radius: 9px; border: 0;
+  background: transparent; color: var(--text-muted); font-weight: 600; font-size: 14px;
+  transition: background .15s, color .15s;
+}
+.pay-method:hover { color: var(--text); }
+.pay-method.active { background: var(--pay); color: #fff; }
+
+.pay-body form[hidden], .wallet-step[hidden], .pay-state[hidden], .pay-body[hidden] { display: none; }
+
+.pay-body label { display: block; margin-bottom: 7px; font-size: 13.5px; font-weight: 500; }
+.pay-body input {
+  width: 100%; padding: 13px 14px; border-radius: 11px;
+  background: var(--bg); border: 1px solid var(--border); color: var(--text);
+  font-size: 16px; letter-spacing: .02em;
+}
+.pay-body input:focus { outline: none; border-color: var(--pay); box-shadow: 0 0 0 3px var(--pay-soft); }
+.pay-body input.invalid { border-color: var(--danger); }
+.pay-body input::placeholder { color: #6f6784; letter-spacing: 0; }
+#walletPin, #cardCvv { letter-spacing: .3em; }
+#walletPin::placeholder, #cardCvv::placeholder { letter-spacing: .1em; }
+
+.field-error { min-height: 20px; margin: 5px 0 6px; font-size: 12.5px; color: var(--danger); }
+.field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+
+.pin-account {
+  display: inline-block; margin-bottom: 14px; padding: 5px 12px; border-radius: 999px;
+  background: var(--pay-soft); color: var(--text); font-size: 13px;
+}
+
+.pay-actions { display: flex; gap: 10px; margin-top: 10px; }
+.btn-pay, .btn-ghost { padding: 13px 18px; border-radius: 11px; font-weight: 700; font-size: 15px; }
+.btn-pay { flex: 1; border: 0; background: var(--pay); color: #fff; }
+.btn-pay:hover { filter: brightness(1.1); }
+.btn-pay.wide { flex: none; width: 100%; margin-top: 8px; }
+.btn-ghost { background: transparent; border: 1px solid var(--border); color: var(--text-muted); font-weight: 600; }
+.btn-ghost:hover { color: var(--text); border-color: var(--text-muted); }
+
+.pay-error {
+  margin-top: 12px; padding: 10px 12px; border-radius: 10px; font-size: 13.5px;
+  background: rgba(238, 125, 111, .12); border: 1px solid rgba(238, 125, 111, .4); color: var(--danger);
+}
+.pay-error:empty { display: none; }
+
+.demo-note { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--border); color: var(--text-muted); font-size: 12.5px; line-height: 1.6; }
+.link-btn { background: none; border: 0; padding: 0; color: var(--teal); text-decoration: underline; font-size: inherit; }
+
+/* ---------- Processing + success ---------- */
+.pay-state { padding: 38px 26px 28px; text-align: center; }
+.pay-state h3 { font-size: 22px; margin: 18px 0 6px; }
+.pay-state > p { color: var(--text-muted); font-size: 14px; }
+
+.spinner {
+  width: 52px; height: 52px; margin: 6px auto 0; border-radius: 50%;
+  border: 4px solid var(--pay-soft); border-top-color: var(--pay);
+  animation: spin .8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.check { width: 76px; height: 76px; display: block; margin: 0 auto; }
+.check-ring { stroke: #5fd08a; stroke-width: 3; stroke-dasharray: 145; stroke-dashoffset: 145; animation: draw .55s ease forwards; }
+.check-tick { stroke: #5fd08a; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 40; stroke-dashoffset: 40; animation: draw .35s .45s ease forwards; }
+@keyframes draw { to { stroke-dashoffset: 0; } }
+
+.receipt-list {
+  margin: 20px 0 14px; padding: 6px 16px; text-align: left;
+  border-radius: 12px; background: var(--bg); border: 1px solid var(--border);
+}
+.receipt-list div { display: flex; justify-content: space-between; gap: 14px; padding: 9px 0; font-size: 14px; }
+.receipt-list div + div { border-top: 1px solid var(--border); }
+.receipt-list dt { color: var(--text-muted); }
+.receipt-list dd { margin: 0; font-weight: 600; text-align: right; word-break: break-all; }
+
+@media (max-width: 420px) {
+  .pay-top { padding: 38px 20px 18px; }
+  .pay-body { padding: 18px 20px; }
+  .pay-brand { font-size: 28px; }
+}
