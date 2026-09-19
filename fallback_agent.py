@@ -266,7 +266,7 @@ def respond(ctx, text):
         return _show_cart(ctx)
 
     if re.match(r"^(hi|hello|hey|hola|salam|assalamu)\b", low):
-        return "Hi! I'm Ruhi, your Dokan shopping assistant. Tell me what you're looking for and your budget.\n\n" + HELP
+        return "Hi! I'm Arafat, your Dokan shopping assistant. Tell me what you're looking for and your budget.\n\n" + HELP
 
     if tokens & {"help", "commands"}:
         return HELP

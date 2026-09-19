@@ -30,7 +30,7 @@ Open http://127.0.0.1:5000 in your browser.
 
 ### Turn on the AI assistant (optional)
 
-Without a key the shop runs in **basic mode**: Ruhi understands a set of simple commands (listed below). To let Claude understand normal sentences:
+Without a key the shop runs in **basic mode**: Arafat understands a set of simple commands (listed below). To let Claude understand normal sentences:
 
 1. Copy `.env.example` to `.env`
 2. Put your Anthropic API key in it: `ANTHROPIC_API_KEY=sk-ant-...`
@@ -45,7 +45,7 @@ With the AI on, just talk normally. Examples:
 - "I need a phone under 40,000 taka with a good camera"
 - "Add the second one to my cart"
 - "Checkout"
-- "I want to add a new product" (Ruhi asks for the name, category, price and stock)
+- "I want to add a new product" (Arafat asks for the name, category, price and stock)
 
 In basic mode, use these commands:
 

@@ -71,7 +71,7 @@ function render() {
     body.innerHTML = `
       <div class="cart-empty">
         <strong>Your cart is empty</strong>
-        Ask Ruhi in the chat, or add something from the product list.
+        Ask Arafat in the chat, or add something from the product list.
       </div>`;
     foot.innerHTML = "";
     return;

@@ -1,4 +1,4 @@
-// Chat with Ruhi: sending messages, showing replies, product cards and order receipts.
+// Chat with Arafat: sending messages, showing replies, product cards and order receipts.
 
 import { api } from "./api.js";
 import { addItem } from "./cart.js";
@@ -11,7 +11,7 @@ import { $, escapeHtml, fmt } from "./utils.js";
 let busy = false;
 
 const WELCOME =
-  "Hi, I'm Ruhi, Dokan's shopping assistant.\n\n" +
+  "Hi, I'm Arafat, Dokan's shopping assistant.\n\n" +
   "Tell me what you need and your budget, and I'll find the best match. " +
   "I can also add items to your cart, take you through payment with bKash, Nagad or card, " +
   "and add new products to the store.";
@@ -57,7 +57,7 @@ function receiptHtml(order, methodLabel) {
 function addMessage(role, text, extraHtml = "") {
   const el = document.createElement("div");
   el.className = `msg ${role}`;
-  const who = role === "user" ? "You" : role === "assistant" ? "Ruhi" : "";
+  const who = role === "user" ? "You" : role === "assistant" ? "Arafat" : "";
   el.innerHTML = `
     ${who ? `<div class="msg-who">${who}</div>` : ""}
     <div class="bubble">${formatText(text)}</div>
@@ -70,7 +70,7 @@ function showTyping() {
   const el = document.createElement("div");
   el.className = "msg assistant";
   el.id = "typingRow";
-  el.innerHTML = `<div class="msg-who">Ruhi</div><div class="bubble"><div class="typing"><span></span><span></span><span></span></div></div>`;
+  el.innerHTML = `<div class="msg-who">Arafat</div><div class="bubble"><div class="typing"><span></span><span></span><span></span></div></div>`;
   $("#chatBody").appendChild(el);
   scrollToBottom();
 }
