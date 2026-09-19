@@ -1,6 +1,6 @@
 # Dokan - shop by chatting
 
-Dokan is a small online electronics store where you do everything through a chat with **Arfat**, the shopping assistant. Ask for a product, add it to your cart, pay with bKash, Nagad or card, and even add new products to the store, all from the chat box. The product list and cart update live next to it.
+Dokan is a small online electronics store where you do everything through a chat with **Arafat**, the shopping assistant. Ask for a product, add it to your cart, pay with bKash, Nagad or card, and even add new products to the store, all from the chat box. The product list and cart update live next to it.
 
 Payments are a **demo**. No real money moves and nothing is sent to bKash, Nagad or a bank.
 
